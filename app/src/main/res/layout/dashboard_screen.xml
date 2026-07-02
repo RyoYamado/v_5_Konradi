@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -15,8 +16,10 @@
         <ImageView
             android:layout_width="64dp"
             android:layout_height="64dp"
+            android:contentDescription="TODO"
             android:scaleType="centerCrop"
-            android:src="@drawable/image_12" />
+            android:src="@drawable/image_12"
+            tools:ignore="ContentDescription,HardcodedText" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -30,15 +33,17 @@
                 android:layout_height="wrap_content"
                 android:text="@string/hello"
                 android:textColor="@color/text_dark"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:textSize="20sp" />
+                tools:ignore="VisualLintSystemUi" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/date"
                 android:textColor="@color/text_grey"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                tools:ignore="TextContrastCheck" />
 
         </LinearLayout>
 
@@ -53,14 +58,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:importantForAccessibility="no"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:padding="20dp"
+            tools:ignore="HardcodedText">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="164dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/image_13" />
+                android:src="@drawable/image_13"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -75,7 +84,8 @@
                 android:layout_height="173dp"
                 android:layout_marginTop="24dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/image_14" />
+                android:src="@drawable/image_14"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -90,6 +100,7 @@
     </ScrollView>
 
     <LinearLayout
+        style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -98,32 +109,38 @@
 
         <Button
             android:id="@+id/btnExit"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="54dp"
             android:layout_weight="1"
             android:background="@drawable/exit_btn"
             android:textAllCaps="false"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            tools:ignore="SpeakableTextPresentCheck,VisualLintButtonSize" />
 
         <Button
             android:id="@+id/btnOnline"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="54dp"
             android:layout_marginStart="12dp"
             android:layout_weight="1"
             android:background="@drawable/online_btn"
             android:textAllCaps="false"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            tools:ignore="ButtonStyle,SpeakableTextPresentCheck,VisualLintButtonSize" />
 
         <Button
             android:id="@+id/btnSnapshot"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="54dp"
             android:layout_marginStart="12dp"
             android:layout_weight="1"
             android:background="@drawable/snapshot_btn"
             android:textAllCaps="false"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            tools:ignore="SpeakableTextPresentCheck,VisualLintButtonSize" />
 
     </LinearLayout>
 

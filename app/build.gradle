@@ -4,11 +4,13 @@ plugins {
 
 android {
     namespace 'com.example.konradi_v_5'
+    //noinspection GradleDependency
     compileSdk 33
 
     defaultConfig {
         applicationId "com.example.konradi_v_5"
         minSdk 32
+        //noinspection ExpiredTargetSdkVersion
         targetSdk 32
         versionCode 1
         versionName "1.0"

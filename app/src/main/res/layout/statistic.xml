@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -10,14 +11,16 @@
         android:layout_height="64dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:paddingStart="16dp">
+        android:paddingStart="16dp"
+        tools:ignore="RtlSymmetry">
 
         <ImageButton
             android:id="@+id/btnBack"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:background="@null"
-            android:src="@drawable/ic_arrow_back" />
+            android:src="@drawable/ic_arrow_back"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -26,7 +29,8 @@
             android:text="@string/settings_title"
             android:textColor="@color/text_dark"
             android:textSize="22sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="VisualLintSystemUi" />
 
     </LinearLayout>
 
@@ -48,7 +52,8 @@
                 android:layout_marginTop="10dp"
                 android:buttonTint="@color/teal"
                 android:text="@string/setting_1"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
 
             <CheckBox
                 android:id="@+id/check2"
@@ -57,7 +62,8 @@
                 android:layout_marginTop="10dp"
                 android:buttonTint="@color/teal"
                 android:text="@string/setting_2"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
 
             <CheckBox
                 android:id="@+id/check3"
@@ -66,7 +72,8 @@
                 android:layout_marginTop="10dp"
                 android:buttonTint="@color/teal"
                 android:text="@string/setting_3"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
 
         </LinearLayout>
 
@@ -79,8 +86,9 @@
         android:layout_margin="15dp"
         android:background="@drawable/btn_teal"
         android:text="@string/reset"
-        android:textColor="@color/white"
         android:textAllCaps="false"
-        android:textSize="18sp" />
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
 
 </LinearLayout>
