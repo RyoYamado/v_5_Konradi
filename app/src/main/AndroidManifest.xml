@@ -10,7 +10,7 @@
         android:theme="@style/Theme.Konradi">
 
         <activity
-            android:name=".AccessManagerActivity"
+            android:name=".AccessManager"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,11 +19,11 @@
         </activity>
 
         <activity
-            android:name=".DashboardScreenActivity"
+            android:name=".DashboardScreen"
             android:exported="false" />
 
         <activity
-            android:name=".StatisticActivity"
+            android:name=".Statistic"
             android:exported="false" />
 
     </application>

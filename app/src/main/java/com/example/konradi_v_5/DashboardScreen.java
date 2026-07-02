@@ -9,12 +9,12 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class DashboardScreenActivity extends AppCompatActivity {
+public class DashboardScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard_screen);
+        setContentView(R.layout.dashboard_screen);
 
         TextView tvHello = findViewById(R.id.tvHello);
         Button btnExit = findViewById(R.id.btnExit);
@@ -37,7 +37,7 @@ public class DashboardScreenActivity extends AppCompatActivity {
         btnOnline.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DashboardScreenActivity.this, StatisticActivity.class));
+                startActivity(new Intent(DashboardScreen.this, Statistic.class));
             }
         });
 

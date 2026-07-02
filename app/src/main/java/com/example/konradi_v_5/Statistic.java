@@ -10,12 +10,12 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class StatisticActivity extends AppCompatActivity {
+public class Statistic extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_statistic);
+        setContentView(R.layout.statistic);
 
         ImageButton btnBack = findViewById(R.id.btnBack);
         Button btnReset = findViewById(R.id.btnReset);
@@ -27,7 +27,7 @@ public class StatisticActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 String state = isChecked ? "включено" : "выключено";
-                Toast.makeText(StatisticActivity.this, buttonView.getText() + ": " + state, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Statistic.this, buttonView.getText() + ": " + state, Toast.LENGTH_SHORT).show();
             }
         };
         check1.setOnCheckedChangeListener(listener);
@@ -47,7 +47,7 @@ public class StatisticActivity extends AppCompatActivity {
                 check1.setChecked(false);
                 check2.setChecked(false);
                 check3.setChecked(false);
-                Toast.makeText(StatisticActivity.this, R.string.reset_toast, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Statistic.this, R.string.reset_toast, Toast.LENGTH_SHORT).show();
             }
         });
     }

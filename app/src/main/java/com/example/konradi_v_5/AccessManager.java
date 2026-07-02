@@ -12,14 +12,14 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AccessManagerActivity extends AppCompatActivity {
+public class AccessManager extends AppCompatActivity {
 
     private boolean passwordVisible = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_access_manager);
+        setContentView(R.layout.access_manager);
 
         EditText etLogin = findViewById(R.id.etLogin);
         EditText etPassword = findViewById(R.id.etPassword);
@@ -45,7 +45,7 @@ public class AccessManagerActivity extends AppCompatActivity {
         btnAuth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AccessManagerActivity.this, DashboardScreenActivity.class);
+                Intent intent = new Intent(AccessManager.this, DashboardScreen.class);
                 intent.putExtra("name", etLogin.getText().toString());
                 startActivity(intent);
             }
@@ -54,7 +54,7 @@ public class AccessManagerActivity extends AppCompatActivity {
         tvRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(AccessManagerActivity.this, R.string.register_toast, Toast.LENGTH_SHORT).show();
+                Toast.makeText(AccessManager.this, R.string.register_toast, Toast.LENGTH_SHORT).show();
             }
         });
     }
