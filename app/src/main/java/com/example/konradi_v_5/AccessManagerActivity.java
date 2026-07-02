@@ -36,7 +36,7 @@ public class AccessManagerActivity extends AppCompatActivity {
                     btnEye.setImageResource(R.drawable.ic_eye_off);
                 } else {
                     etPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                    btnEye.setImageResource(R.drawable.ic_eye);
+                    btnEye.setImageResource(R.drawable.ic_remove_red_eye);
                 }
                 etPassword.setSelection(etPassword.getText().length());
             }

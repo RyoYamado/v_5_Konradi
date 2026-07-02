@@ -101,33 +101,29 @@
             android:layout_width="0dp"
             android:layout_height="54dp"
             android:layout_weight="1"
-            android:background="@drawable/btn_teal"
-            android:text="@string/exit"
-            android:textColor="@color/white"
-            android:textAllCaps="false" />
+            android:background="@drawable/exit_btn"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/btnOnline"
             android:layout_width="0dp"
             android:layout_height="54dp"
-            android:layout_weight="1"
             android:layout_marginStart="12dp"
-            android:background="@drawable/btn_teal"
-            android:drawableStart="@drawable/ic_globe"
-            android:text="@string/online"
-            android:textColor="@color/white"
-            android:textAllCaps="false" />
+            android:layout_weight="1"
+            android:background="@drawable/online_btn"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/btnSnapshot"
             android:layout_width="0dp"
             android:layout_height="54dp"
-            android:layout_weight="1"
             android:layout_marginStart="12dp"
-            android:background="@drawable/btn_teal"
-            android:text="@string/snapshot"
-            android:textColor="@color/white"
-            android:textAllCaps="false" />
+            android:layout_weight="1"
+            android:background="@drawable/snapshot_btn"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 

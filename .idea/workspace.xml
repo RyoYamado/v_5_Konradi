@@ -15,7 +15,22 @@
           <theme>@style/Theme.Konradi</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/capture_btn.xml">
+        <config>
+          <theme>@style/Theme.Konradi</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/card_placeholder.xml">
+        <config>
+          <theme>@style/Theme.Konradi</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/exit_btn.xml">
+        <config>
+          <theme>@style/Theme.Konradi</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/exit_cross_btn.xml">
         <config>
           <theme>@style/Theme.Konradi</theme>
         </config>
@@ -32,12 +47,12 @@
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_eye_off.xml">
         <config>
-          <theme>@style/Theme.Konradi</theme>
+          <theme>@android:style/Theme.Material.Light</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_globe.xml">
         <config>
-          <theme>@style/Theme.Konradi</theme>
+          <theme>@android:style/Theme.Material.Light</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher.xml">
@@ -51,6 +66,31 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_person.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_remove_red_eye.xml">
+        <config>
+          <theme>@style/Theme.Konradi</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/lock.xml">
+        <config>
+          <theme>@style/Theme.Konradi</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/online_btn.xml">
+        <config>
+          <theme>@style/Theme.Konradi</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/person.xml">
+        <config>
+          <theme>@style/Theme.Konradi</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/snapshot_btn.xml">
         <config>
           <theme>@style/Theme.Konradi</theme>
         </config>
@@ -76,7 +116,18 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c37e3470-bc61-4efa-bbc0-e8f912253ec3" name="Changes" comment="" />
+    <list default="true" id="c37e3470-bc61-4efa-bbc0-e8f912253ec3" name="Changes" comment="воссозданы элементы интерфейса">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_remove_red_eye.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/snapshot_btn.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/konradi_v_5/AccessManagerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/konradi_v_5/AccessManagerActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_eye.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_globe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_lock.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_person.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_access_manager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_access_manager.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dashboard_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_dashboard_screen.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +160,27 @@
     </system>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RyoYamado&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RyoYamado/v_5_Konradi.git&quot;,
+    &quot;accountId&quot;: &quot;e3ab0b66-e508-4bae-bbc3-b6958d2b4ff3&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6,
@@ -120,22 +191,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Android App.app.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/D1ff/AndroidStudioProjects/Konradi_v_5",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/D1ff/AndroidStudioProjects/Konradi_v_5&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Konradi_v_5.app" />
@@ -212,7 +283,38 @@
       <option name="presentableId" value="Default" />
       <updated>1782962337483</updated>
     </task>
+    <task id="LOCAL-00001" summary="Создан Statistic_Activity">
+      <option name="closed" value="true" />
+      <created>1782965407305</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1782965407305</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Создан DashboardScreenActivity">
+      <option name="closed" value="true" />
+      <created>1782965482175</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782965482175</updated>
+    </task>
+    <task id="LOCAL-00003" summary="воссозданы элементы интерфейса">
+      <option name="closed" value="true" />
+      <created>1782965538110</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1782965538110</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Создан Statistic_Activity" />
+    <MESSAGE value="Создан DashboardScreenActivity" />
+    <MESSAGE value="воссозданы элементы интерфейса" />
+    <option name="LAST_COMMIT_MESSAGE" value="воссозданы элементы интерфейса" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
