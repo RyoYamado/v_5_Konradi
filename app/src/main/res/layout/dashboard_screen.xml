@@ -47,6 +47,17 @@
 
         </LinearLayout>
 
+        <Button
+            android:id="@+id/btnSettings"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="110dp"
+            android:background="@drawable/settings"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            tools:ignore="ButtonStyle,SpeakableTextPresentCheck,VisualLintButtonSize" />
+
     </LinearLayout>
 
     <ScrollView
@@ -119,7 +130,7 @@
             tools:ignore="SpeakableTextPresentCheck,VisualLintButtonSize" />
 
         <Button
-            android:id="@+id/btnOnline"
+            android:id="@+id/btnOnlines"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="54dp"

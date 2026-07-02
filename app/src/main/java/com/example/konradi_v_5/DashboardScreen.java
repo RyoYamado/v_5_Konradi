@@ -1,5 +1,6 @@
 package com.example.konradi_v_5;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -11,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class DashboardScreen extends AppCompatActivity {
 
+    @SuppressLint("StringFormatInvalid")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +20,7 @@ public class DashboardScreen extends AppCompatActivity {
 
         TextView tvHello = findViewById(R.id.tvHello);
         Button btnExit = findViewById(R.id.btnExit);
-        Button btnOnline = findViewById(R.id.btnOnline);
+        Button btnSettings = findViewById(R.id.btnSettings);
         Button btnSnapshot = findViewById(R.id.btnSnapshot);
 
         String name = getIntent().getStringExtra("name");
@@ -34,7 +36,7 @@ public class DashboardScreen extends AppCompatActivity {
             }
         });
 
-        btnOnline.setOnClickListener(new View.OnClickListener() {
+        btnSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(DashboardScreen.this, Statistic.class));
