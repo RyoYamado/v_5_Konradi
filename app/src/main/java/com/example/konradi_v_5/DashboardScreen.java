@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -29,25 +28,10 @@ public class DashboardScreen extends AppCompatActivity {
         }
         tvHello.setText(getString(R.string.hello, name));
 
-        btnExit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        btnExit.setOnClickListener(v -> finish());
 
-        btnSettings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(DashboardScreen.this, Statistic.class));
-            }
-        });
+        btnSettings.setOnClickListener(v -> startActivity(new Intent(DashboardScreen.this, Statistic.class)));
 
-        btnSnapshot.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MediaStore.ACTION_IMAGE_CAPTURE));
-            }
-        });
+        btnSnapshot.setOnClickListener(v -> startActivity(new Intent(MediaStore.ACTION_IMAGE_CAPTURE)));
     }
 }

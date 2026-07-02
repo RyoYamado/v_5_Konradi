@@ -27,35 +27,24 @@ public class AccessManager extends AppCompatActivity {
         Button btnAuth = findViewById(R.id.btnAuth);
         TextView tvRegister = findViewById(R.id.tvRegister);
 
-        btnEye.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                passwordVisible = !passwordVisible;
-                if (passwordVisible) {
-                    etPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
-                    btnEye.setImageResource(R.drawable.ic_eye_off);
-                } else {
-                    etPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                    btnEye.setImageResource(R.drawable.ic_remove_red_eye);
-                }
-                etPassword.setSelection(etPassword.getText().length());
+        btnEye.setOnClickListener(v -> {
+            passwordVisible = !passwordVisible;
+            if (passwordVisible) {
+                etPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                btnEye.setImageResource(R.drawable.ic_eye_off);
+            } else {
+                etPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                btnEye.setImageResource(R.drawable.ic_remove_red_eye);
             }
+            etPassword.setSelection(etPassword.getText().length());
         });
 
-        btnAuth.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AccessManager.this, DashboardScreen.class);
-                intent.putExtra("name", etLogin.getText().toString());
-                startActivity(intent);
-            }
+        btnAuth.setOnClickListener(v -> {
+            Intent intent = new Intent(AccessManager.this, DashboardScreen.class);
+            intent.putExtra("name", etLogin.getText().toString());
+            startActivity(intent);
         });
 
-        tvRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(AccessManager.this, R.string.register_toast, Toast.LENGTH_SHORT).show();
-            }
-        });
+        tvRegister.setOnClickListener(v -> Toast.makeText(AccessManager.this, R.string.register_toast, Toast.LENGTH_SHORT).show());
     }
 }
