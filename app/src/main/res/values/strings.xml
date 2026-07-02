@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Konradi_v_5</string>
+    <string name="login_hint">Логин</string>
+    <string name="password_hint">Пароль</string>
+    <string name="default_name">Диана</string>
+    <string name="auth">Авторизоваться</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="register_toast">Регистрация временно недоступна</string>
+    <string name="hello">Привет, Диана!</string>
+    <string name="date">22 декабря, в 11:20</string>
+    <string name="card1">Росянка: Плотоядное растение, питающееся насекомыми.</string>
+    <string name="card2">Цветы плюмерии красной: Деревья имеют толстые, мясистые ветви, которые при повреждении выделяют молочный сок.</string>
+    <string name="exit">Выйти</string>
+    <string name="online">Онлайн</string>
+    <string name="snapshot">Снимок</string>
+    <string name="settings_title">Статистика</string>
+    <string name="setting_1">Уведомления</string>
+    <string name="setting_2">Звук</string>
+    <string name="setting_3">Геолокация</string>
+    <string name="reset">Сбросить настройки</string>
+    <string name="reset_toast">Настройки сброшены</string>
+    <string name="no_camera">Камера недоступна</string>
+</resources>
